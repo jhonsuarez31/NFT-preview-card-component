@@ -1,0 +1,130 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+}
+a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+}
+
+ul{
+    list-style: none;
+}
+hr{
+    margin: 10px 0;
+}
+h1{
+    font-size: 22px;
+}
+body{
+    background-color:hsl(217, 54%, 11%) ;
+    font-family: 'Outfit', sans-serif;
+    font-size:18px;
+    height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  hsl(215, 51%, 70%); 
+   
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    margin: 3.5rem 1rem;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 30px 2px 18px hsl(217, 54%, 10%) 
+   
+}
+.equilibrium-img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.6rem;
+}
+.content-card {
+    margin: 10px 0px;
+    padding: 20px 0px;   
+}
+
+.content-card p {
+    margin: 5px 0px;
+    padding: 10px 0px;  
+    color:  hsl(215, 51%, 70%); 
+}
+
+.content-card ul{
+
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    text-align: center;
+}
+.icon{
+    
+    max-width:20px;
+    padding-right: 5px;
+}
+
+.creator-card{
+    display: flex;
+    justify-content:start;    
+}
+.profile{
+    max-width: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: solid 1px hsl(0, 0%, 100%);
+}
+.creator-card ul{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+.image-card {
+    max-width: 300px;
+    min-height: 300px;
+    position: relative;
+    border-radius: 0.6rem;
+}
+
+
+.image-card::after,
+.image-card::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 0.6rem;
+}
+
+.image-card:hover::after {
+    background: url(/img/icon-view.svg) center center no-repeat;
+    opacity: 1;
+}
+
+.image-card:hover::before {
+    background-color: cyan;
+    opacity: 0.6;
+    transition: 0.5s ease-out;
+}
+
+
+
+main{
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
